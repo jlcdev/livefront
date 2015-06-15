@@ -48,6 +48,4 @@ gulp.task('watch', function(){
   gulp.watch(['./app/scripts/**/*.js'], ['jshint']);
 });
 
-
-
 gulp.task('default', ['server', 'watch']);
