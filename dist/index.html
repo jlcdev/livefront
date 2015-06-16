@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <base href="/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title></title>
+  </head>
+  <body ng-app="blog">
+    <!--[if lt IE 8]>
+      <p class="browsehappy">
+      Estás usando un navegador <strong>desactualizado</strong>.
+      Por favor <a href="http://browserhappy.com/">actualiza tu navegador</a>
+      Para mejorar la experiencia..
+      </p>
+    <![endif]-->
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-3">
+          <a ng-href="/new">Crear Entrada</a>
+        </aside>
+        <section class="col-sm-9" ng-view></section>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
